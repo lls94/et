@@ -1256,7 +1256,7 @@ async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, env
 			}
 		}
 		
-		if ((addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0){
+		if ((addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0 || env.RANDOM){
 			// 定义 Cloudflare IP 范围的 CIDR 列表
 			let cfips = [
 				'103.21.244.0/23',
