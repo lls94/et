@@ -51,7 +51,3 @@ jobs:
       - name: Push changes to master
         run: |
           git push origin dev:master  # 将混淆后的代码推送到 master 分支
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
